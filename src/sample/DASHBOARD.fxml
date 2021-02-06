@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <BorderPane fx:id="mainPane" layoutX="-11.0" layoutY="32.0" prefHeight="800.0" prefWidth="1500.0" style="-fx-background-color: #F5F5FC;">
+         <left>
+            <VBox prefHeight="800.0" prefWidth="266.0" style="-fx-background-color: #FEFEFE;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="694.0" prefWidth="269.0">
+                     <children>
+                        <JFXButton prefHeight="118.0" prefWidth="269.0" text="IUMS" textFill="#575ff0">
+                           <font>
+                              <Font name="Baskerville Old Face" size="37.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#DashboardAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#4849ff" style="-fx-background-color: #FEFEFE;" text="Dashboard">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#ClassRoutineAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#4849ff" style="-fx-background-color: #FEFEFE;" text="Class routine">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#CourseMaterialsAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#4849ff" style="-fx-background-color: #FEFEFE;" text="Course Materials">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#ResultAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#4849ff" style="-fx-background-color: #FEFEFE;" text="Result">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#CGPACalculatorAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#4849ff" style="-fx-background-color: #FEFEFE;" text="CGPA Calculator">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#MedicalSupportAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#4849ff" style="-fx-background-color: #FEFEFE;" text="Medical Support">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#NoticeAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#4849ff" style="-fx-background-color: #FEFEFE;" text="Notice">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#UniversityFundAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#4849ff" style="-fx-background-color: #FEFEFE;" text="University Fund">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
