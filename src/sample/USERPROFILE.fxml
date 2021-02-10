@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXTextArea?>
-<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserProfileController">
    <children>
       <Pane prefHeight="800.0" prefWidth="1231.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -27,15 +27,15 @@
                               <Label layoutX="60.0" layoutY="420.0" prefHeight="45.0" prefWidth="150.0" text="Gender *" />
                               <Label layoutX="60.0" layoutY="480.0" prefHeight="45.0" prefWidth="150.0" text="Religion *" />
                               <Label layoutX="60.0" layoutY="540.0" prefHeight="45.0" prefWidth="150.0" text="Blood Group *" />
-                              <Label layoutX="450.0" layoutY="60.0" prefHeight="45.0" prefWidth="150.0" text="Maisha Musarrat Nabila" />
-                              <JFXTextField layoutX="450.0" layoutY="120.0" />
-                              <JFXTextField layoutX="450.0" layoutY="180.0" />
-                              <JFXTextField layoutX="450.0" layoutY="240.0" />
-                              <JFXTextField layoutX="450.0" layoutY="300.0" />
-                              <JFXTextField layoutX="450.0" layoutY="360.0" />
-                              <JFXTextField layoutX="450.0" layoutY="420.0" />
-                              <JFXTextField layoutX="450.0" layoutY="480.0" />
-                              <JFXTextField layoutX="450.0" layoutY="540.0" />
+                              <Label fx:id="FullName" layoutX="450.0" layoutY="60.0" prefHeight="45.0" prefWidth="150.0" text="No data" />
+                              <TextField fx:id="FirstName" layoutX="450.0" layoutY="120.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="LastName" layoutX="450.0" layoutY="180.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="FatherName" layoutX="450.0" layoutY="240.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="MotherName" layoutX="450.0" layoutY="300.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="BirthDate" layoutX="450.0" layoutY="360.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="Gender" layoutX="450.0" layoutY="420.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="Religion" layoutX="450.0" layoutY="480.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="BloodGroup" layoutX="450.0" layoutY="540.0" prefHeight="20.0" prefWidth="300.0" />
                            </children>
                         </AnchorPane>
                   </content>
@@ -54,9 +54,10 @@
                               <Label layoutX="450.0" layoutY="60.0" prefHeight="45.0" prefWidth="350.0" text="Department of Computer Science &amp; Technology" />
                               <Label layoutX="450.0" layoutY="120.0" prefHeight="45.0" prefWidth="350.0" text="Bachelor of Science in Computer Science and Engineering" />
                               <Label layoutX="450.0" layoutY="180.0" prefHeight="45.0" prefWidth="150.0" text="2/1" />
-                              <Label layoutX="450.0" layoutY="240.0" prefHeight="45.0" prefWidth="150.0" text="3.435" />
+                              <Label fx:id="CGPA" layoutX="450.0" layoutY="240.0" prefHeight="45.0" prefWidth="150.0" />
                               <Label layoutX="450.0" layoutY="300.0" prefHeight="45.0" prefWidth="150.0" text="B" />
                               <Label layoutX="450.0" layoutY="360.0" prefHeight="45.0" prefWidth="150.0" text="B1" />
+                              <Label fx:id="Advisor" layoutX="450.0" layoutY="420.0" prefHeight="45.0" prefWidth="350.0" text="No data" />
                            </children>
                         </AnchorPane>
                   </content>
@@ -66,13 +67,13 @@
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
                               <Label layoutX="60.0" layoutY="60.0" prefHeight="45.0" prefWidth="150.0" text="Guardian Name *" />
-                              <Label layoutX="60.0" layoutY="120.0" prefHeight="45.0" prefWidth="150.0" text="Guardian Name *" />
+                              <Label layoutX="60.0" layoutY="120.0" prefHeight="45.0" prefWidth="150.0" text="Guardian Mobile *" />
                               <Label layoutX="60.0" layoutY="180.0" prefHeight="45.0" prefWidth="150.0" text="Guardian Phone *" />
                               <Label layoutX="60.0" layoutY="240.0" prefHeight="45.0" prefWidth="150.0" text="Guardian Email" />
-                              <JFXTextField layoutX="450.0" layoutY="60.0" text="Suraiya Begum" />
-                              <JFXTextField layoutX="450.0" layoutY="120.0" text="01924783923" />
-                              <JFXTextField layoutX="450.0" layoutY="180.0" text="01796638360" />
-                              <JFXTextField layoutX="450.0" layoutY="240.0" />
+                              <TextField fx:id="GuardianName" layoutX="450.0" layoutY="60.0" prefHeight="20.0" prefWidth="300.0" text="no data" />
+                              <TextField fx:id="GuardianMobile" layoutX="450.0" layoutY="120.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="GuardianPhone" layoutX="450.0" layoutY="180.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="GuardianEmail" layoutX="450.0" layoutY="240.0" prefHeight="20.0" prefWidth="300.0" />
                            </children>
                         </AnchorPane>
                      </content>
@@ -81,16 +82,16 @@
                      <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <JFXTextField layoutX="450.0" layoutY="60.0" prefHeight="26.0" prefWidth="350.0" text="01317712802" />
-                              <JFXTextField layoutX="450.0" layoutY="120.0" prefHeight="26.0" prefWidth="350.0" />
-                              <JFXTextField layoutX="450.0" layoutY="180.0" prefHeight="26.0" prefWidth="350.0" text="maisha2510@gmail.com" />
                               <Label layoutX="60.0" layoutY="60.0" prefHeight="45.0" prefWidth="150.0" text="Mobile Number *" />
                               <Label layoutX="60.0" layoutY="120.0" prefHeight="45.0" prefWidth="150.0" text="Phone Number" />
                               <Label layoutX="60.0" layoutY="180.0" prefHeight="45.0" prefWidth="150.0" text="Email*" />
                               <Label layoutX="60.0" layoutY="240.0" prefHeight="45.0" prefWidth="150.0" text="Present Address *" />
-                              <JFXTextArea layoutX="450.0" layoutY="340.0" prefHeight="60.0" prefWidth="350.0" text="House-63;Road-01;Section-07;Mirpur,Dhaka-1216" />
-                              <JFXTextArea layoutX="450.0" layoutY="240.0" prefHeight="60.0" prefWidth="350.0" text="House-11;Avenue-04;Section-06;Mirpur,Dhaka-1216" />
                               <Label layoutX="60.0" layoutY="340.0" prefHeight="45.0" prefWidth="150.0" text="Permanent Address *" />
+                              <TextField fx:id="MobileNumber" layoutX="450.0" layoutY="60.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="PhoneNumber" layoutX="450.0" layoutY="120.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="Email" layoutX="450.0" layoutY="180.0" prefHeight="20.0" prefWidth="300.0" text="no data" />
+                              <TextArea fx:id="PresentAddress" layoutX="450.0" layoutY="240.0" prefHeight="60.0" prefWidth="300.0" text="no data&#10;" />
+                              <TextArea fx:id="PermanentAddress" layoutX="450.0" layoutY="333.0" prefHeight="60.0" prefWidth="300.0" text="no data&#10;" />
                            </children>
                         </AnchorPane>
                      </content>
@@ -101,10 +102,10 @@
             <Label layoutX="888.0" layoutY="407.0" prefHeight="45.0" prefWidth="150.0" text="Student Name :" />
             <Label layoutX="888.0" layoutY="467.0" prefHeight="45.0" prefWidth="150.0" text="Semester :" />
             <Label layoutX="888.0" layoutY="527.0" prefHeight="45.0" prefWidth="150.0" text="Year/Semester :" />
-            <Label layoutX="1036.0" layoutY="351.0" prefHeight="45.0" prefWidth="150.0" text="190104058" />
-            <Label layoutX="1036.0" layoutY="411.0" prefHeight="45.0" prefWidth="150.0" text="Maisha Musarrat Nabila" />
-            <Label layoutX="1036.0" layoutY="471.0" prefHeight="45.0" prefWidth="150.0" text="Spring,2019" />
-            <Label layoutX="1036.0" layoutY="531.0" prefHeight="45.0" prefWidth="150.0" text="2/1" />
+            <Label fx:id="sidepaneID" layoutX="1022.0" layoutY="347.0" prefHeight="45.0" prefWidth="150.0" text="no data" />
+            <Label fx:id="sidepaneName" layoutX="1022.0" layoutY="407.0" prefHeight="45.0" prefWidth="150.0" text="no data" />
+            <Label fx:id="sidepaneSemester" layoutX="1022.0" layoutY="458.0" prefHeight="45.0" prefWidth="150.0" text="no data" />
+            <Label fx:id="sidepaneYearSemester" layoutX="1022.0" layoutY="527.0" prefHeight="45.0" prefWidth="150.0" text="no data" />
          </children></Pane>
    </children>
 </AnchorPane>
