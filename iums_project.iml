@@ -9,5 +9,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="lib" level="project" />
     <orderEntry type="library" exported="" name="jfoenix-9.0.10" level="project" />
+    <orderEntry type="library" name="controlsfx-11.0.3" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.23" level="project" />
   </component>
 </module>
