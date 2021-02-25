@@ -1,0 +1,16 @@
+.tab-pane .tab-header-area .tab-header-background{
+    -fx-background-color: #f5f5f5;
+    -fx-opacity: 0;
+}
+.tab{
+    -fx-background-color:   #f5f5f5;}
+
+.tab:hover{
+    -fx-background-color: #ff7788;
+
+}
+
+.tab:selected{
+    -fx-background-color: #00bab3;
+
+}
